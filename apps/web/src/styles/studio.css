@@ -1,0 +1,15 @@
+[data-border='true'] *:not(svg) + span {
+  box-shadow: none !important;
+}
+
+[data-border='true'] {
+  box-shadow: none !important;
+}
+
+@font-face {
+  font-family: 'SuperSans';
+  src: url('/backend/fonts/SuperWorkSans-Regular.otf'),
+    url('/backend/fonts/SuperWorkSans-Regular.woff2'),
+    url('/backend/fonts/SuperWorkSans-Regular.woff'),
+    url('/backend/fonts/SuperWorkSans-Regular.ttf');
+}

@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+@import './colors.css';
+@import './text.css';
+@import './breakpoints.css';
+@import './grid.css';
+@import './ease.css';
+@import './spacing.css';
+@import './lenis.css';
+@import 'tw-animate-css';
+@plugin "tailwindcss-debug-screens";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";
+@plugin "tailwindcss-debug-screens";
+
+/* theme */
+@custom-variant theme-light (&:where([data-theme="light"] *));
+@custom-variant theme-dark (&:where([data-theme="dark"] *));
+@custom-variant theme-purple (&:where([data-theme="purple"] *));
+/* page */
+@custom-variant page-type-subpage (&:where([data-pagetype="subpage"] *));
+@custom-variant page-type-frontpage (&:where([data-pagetype="frontpage"] *));
+@custom-variant page-type-articlepage (&:where([data-pagetype="articlepage"] *));
+@custom-variant page-type-eventpage (&:where([data-pagetype="eventpage"] *));
+
+@custom-variant isopen (&:where([data-isopen="true"] *));
+
+@theme {
+}

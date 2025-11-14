@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --text-small: clamp(12px, calc(16px + 1.6667vw), 14px);
+  --text-regular: clamp(1em, 1.2rem + 0.667rem, 1.05rem);
+  --text-increased: clamp(1.1rem, calc(1.1rem + 1.6667vw), 1.2rem);
+  --text-medium: clamp(1.25rem, calc(1.25rem + 2.7778vw), 1.5rem);
+  --text-large: clamp(1.563rem, calc(1.563rem + 3.125vw), 2.25rem);
+  --text-huge: clamp(1.953rem, calc(1.953rem + 2.6667vw), 3.375rem);
+  --text-giant: clamp(2.441rem, calc(2.441rem + 2.1111vw), 5.063rem);
+}

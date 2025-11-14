@@ -1,0 +1,21 @@
+{
+  "name": "@repo/link-field",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "main": "src/index.tsx",
+  "types": "src/index.ts",
+  "link": "src/sanityLink.tsx",
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "eslint-config-next": "15.0.3",
+    "next": "^15.0.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

@@ -1,0 +1,42 @@
+name: Backup Sanity
+
+on:
+  schedule:
+    - cron: '0 03 */1 * *'
+  workflow_dispatch:
+
+jobs:
+  sanity-backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Install Sanity CLI
+        run: npm install -g @sanity/cli
+
+      - name: Create backups directory
+        run: mkdir -p backups
+
+      - name: Export Sanity dataset
+        run: |
+          if [ -d "apps/studio" ]; then
+            echo "Found apps/studio. Using it."
+            cd ./apps/studio && SKIP_VALIDATION=true
+            sanity dataset export production ../../backups/backup-studio.tar.gz
+          else
+            echo "No Sanity folder found. Exiting."
+            exit 1
+          fi
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+
+      - name: Upload Backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: sanity-backup
+          path: backups/*.tar.gz
+          retention-days: 2

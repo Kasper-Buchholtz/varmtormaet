@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "jsx": "preserve",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "strictNullChecks": false,
+    "noImplicitThis": false,
+    "strictFunctionTypes": false,
+      "target": "es2017",
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["src/*"]
+      },
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "incremental": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "strictBindCallApply": false,
+      "strictPropertyInitialization": false,
+      "alwaysStrict": false
+  }
+}

@@ -1,0 +1,1 @@
+export { definePathname } from './definePathname'

@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@theme {
+  --color-superego-green: #3be086;
+  --color-superego-purple: #7b61ff;
+  --color-superego-lavendar: #c9a9ea;
+  --color-superego-flamingo: #eabeee;
+  --color-superego-grey: #5f727f;
+  --color-superego-light-base: #fcfcfc;
+  --color-superego-light-light: #eff1f2;
+  --color-superego-light-0: #ffffff;
+  --color-superego-light-50: #f0f0f0;
+  --color-superego-light-100: #e0e0e0;
+  --color-superego-light-200: #c2c2c2;
+  --color-superego-light-300: #a3a3a3;
+  --color-superego-light-400: #858585;
+  --color-superego-dark: #242b31;
+  --color-superego-black: #3d3d3d;
+}
