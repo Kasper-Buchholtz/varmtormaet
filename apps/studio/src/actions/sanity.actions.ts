@@ -1,4 +1,4 @@
-import { EyeOpenIcon, EyeClosedIcon } from '@sanity/icons'
+import { Eye, EyeSlash } from '@mynaui/icons-react'
 import { DocumentActionComponent, DocumentActionProps } from 'sanity'
 
 export function createVisualAction(originalAction: DocumentActionComponent) {
@@ -10,7 +10,7 @@ export function createVisualAction(originalAction: DocumentActionComponent) {
     return {
       ...originalResult,
       tone: 'positive',
-      icon: originalResult.disabled ? EyeOpenIcon : EyeClosedIcon,
+      icon: originalResult.disabled ? Eye : EyeSlash,
     }
   }
   return BetterButtonAction

@@ -13,9 +13,9 @@ import { dashboard } from './dashboard.plugin'
 import { pagesTool } from './pages.plugin'
 import { documentInternationalizationTool } from './Internationalization.plugin'
 import Appconfig from '@repo/utils/src/superego.config'
+import { customDocumentActions } from './custom-document-actions.plugin'
 
 const plugins = [
-  dashboard,
   structureTool({ structure, title: 'Indhold' }),
   pagesTool,
   ...(Appconfig.i18n.locales.length > 0 ? [documentInternationalizationTool] : []),
@@ -32,6 +32,7 @@ const plugins = [
   linkField({
     linkableSchemaTypes: ['page', 'event', 'article'],
   }),
+  customDocumentActions(),
   {
     name: 'redirect-import',
     title: 'Import Redirects',

@@ -41,7 +41,8 @@
     "../web/src/utils/sanity.links.ts",
     "../web/src/sanity/lib/sanity.queries.ts",
     "../web/src/sanity/lib/sanity.image.ts",
-    "migrations/employees/migration.js"
+    "migrations/employees/migration.js",
+    "src/shopify/documents/productVariant.schema.tsx"
   ],
   "exclude": ["node_modules"]
 }

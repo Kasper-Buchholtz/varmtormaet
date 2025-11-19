@@ -4,7 +4,7 @@ import { documentInternationalization } from '@sanity/document-internationalizat
 
 export const documentInternationalizationTool = documentInternationalization({
   supportedLanguages: [...Appconfig.i18n.locales],
-  schemaTypes: ['page', 'navigation', 'footer', 'settings', 'article', 'event', 'settings'],
+  schemaTypes: ['page', 'navigation', 'footer', 'article', 'event', 'settings'],
   languageField: 'locale',
   allowCreateMetaDoc: true,
 })

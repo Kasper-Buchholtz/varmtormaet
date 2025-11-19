@@ -102,32 +102,6 @@ export function InputWithCharacterCount(props: TextInputProps): JSX.Element {
           />
         </div>
       </Flex>
-      <Flex justify="flex-start" align="center" gap={3}>
-        <Card padding={1}>
-          <Button
-            text="Indsæt sidetitel"
-            tone="primary"
-            onClick={handleInsertSideTitle}
-            mode="ghost"
-          />
-        </Card>
-        <Card padding={1}>
-          <Button
-            text="Indsæt seperator"
-            tone="primary"
-            onClick={handleInsertSeparator}
-            mode="ghost"
-          />
-        </Card>
-        <Card padding={1}>
-          <Button
-            text="Indsæt hjemmesidens titel"
-            tone="primary"
-            onClick={handleInsertWebTitle}
-            mode="ghost"
-          />
-        </Card>
-      </Flex>
     </Stack>
   )
 }
