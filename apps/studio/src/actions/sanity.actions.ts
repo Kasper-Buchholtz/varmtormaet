@@ -10,7 +10,7 @@ export function createVisualAction(originalAction: DocumentActionComponent) {
     return {
       ...originalResult,
       tone: 'positive',
-      icon: originalResult.disabled ? Eye : EyeSlash,
+      icon: originalResult.disabled ? EyeSlash : Eye,
     }
   }
   return BetterButtonAction
