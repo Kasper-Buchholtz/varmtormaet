@@ -9,7 +9,7 @@ import footer from './settings/footer.structure'
 import navigation from './settings/navigation.structure'
 import products from './product.structure'
 import collections from './collections.structure'
-import collectionCta from './collection.cta.structure'
+import CallToActions from './call-to-action/collection.cta.structure'
 
 export const structure: StructureResolver = (S, context) =>
   S.list()
@@ -20,7 +20,7 @@ export const structure: StructureResolver = (S, context) =>
       S.divider().title('E-commerce'),
       products(S, context),
       collections(S, context),
-      collectionCta(S, context),
+      CallToActions(S, context),
       S.divider().title('Globale elementer'),
       forms(S, context),
       navigation(S, context),
