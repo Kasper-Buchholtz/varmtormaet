@@ -30,7 +30,7 @@ const plugins = [
   daDKLocale({ title: 'Dansk' }),
   unsplashImageAsset(),
   linkField({
-    linkableSchemaTypes: ['page', 'event', 'article'],
+    linkableSchemaTypes: ['page', 'event', 'article', 'collection', 'product'],
   }),
   customDocumentActions(),
   {
