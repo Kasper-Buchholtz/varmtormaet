@@ -18,6 +18,7 @@ import productVariant from '../shopify/documents/productVariant.schema'
 import { placeholderStringType } from '../shopify/objects/shopify/placeholderStringType'
 import proxyStringType from '../shopify/objects/shopify/proxyStringType'
 import collectionCta from '../shopify/documents/collection.cta.schema'
+import footerCta from '../shopify/documents/footer.cta.schema'
 
 const documentTypes = [...Object.values(Documents)]
 const sectionTypes = [...Object.values(Sections)]
@@ -43,6 +44,7 @@ export const schema: { types: SchemaTypeDefinition[]; templates: any } = {
     inventoryType,
     collectionRuleType,
     placeholderStringType,
+    footerCta,
   ],
   templates: (prev: Array<{ id: string; [key: string]: any }>) => [
     ...prev.filter(
